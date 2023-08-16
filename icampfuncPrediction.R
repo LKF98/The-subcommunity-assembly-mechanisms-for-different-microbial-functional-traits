@@ -83,12 +83,13 @@ for (func in func_list) {
 res_df <- data.frame(res_list)
 # Save the result dataframe to a file
 write.csv(res_df, file = "FinalFuncRes.csv", row.names = FALSE)
+
 # Quantifying the process of community assembly
 # the OTU table file (Tab delimited txt file)
 com.file="otutab_16S_agriculture_rarefy_A.csv"
 # the phylogenetic tree file
 tree.file="root_tree_16s(1).nwk"
-# the classification (taxonomy) information
+# the function information
 clas.file="FinalFuncRes.csv"
 # the environmental varialbes
 env.file="allenvfactor_16SA.csv"
